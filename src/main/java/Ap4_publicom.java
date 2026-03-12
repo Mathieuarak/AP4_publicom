@@ -1,3 +1,6 @@
+
+import view.MainView;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
@@ -9,6 +12,10 @@
 public class Ap4_publicom {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new MainView().setVisible(true);
+            }
+        });
     }
 }
